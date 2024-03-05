@@ -6,23 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="100dp"
-    android:paddingBottom="100dp"
+    android:paddingBottom="200dp"
     android:background="#e0e0e0"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/header"
-        android:text="Gib deine Martikelnummer ein"
+        android:text="@string/gib_deine_martikelnummer_ein"
         android:textSize="20sp"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
 
     <EditText
         android:id="@+id/nummer"
-        android:hint="Nummer"
+        android:hint="@string/nummer"
         android:textSize="20sp"
         android:inputType="number"
         android:layout_height="wrap_content"
@@ -30,13 +31,14 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header"
-        />
+        android:paddingTop="100dp"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ABSCHICKEN"
+        android:text="@string/abschicken"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
