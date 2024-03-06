@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         setContentView(R.layout.second_layout);
-        TextView textView = findViewById(R.id.header);
+        //TextView textView = findViewById(R.id.header);
         //textView.setText("Hello from AAU");
 
         /*ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
