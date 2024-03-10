@@ -57,7 +57,16 @@ public class MainActivity extends AppCompatActivity {
     }
     protected void onButtonBerechnungClick(){
         String berechnungInString = nummer.getText().toString();
-        serverReply.setText(berechnungInString);
+
+        //int modulo = Integer.parseInt(berechnungInString) % 7;
+        int martikelNummer = Integer.parseInt(berechnungInString);
+        int sumOfDigits = 0;
+        while (martikelNummer >0){
+            sumOfDigits += martikelNummer % 10;
+            martikelNummer = martikelNummer/10;
+        }
+        String binarySumOfDigits = Integer.toBinaryString(sumOfDigits);
+        serverReply.setText(binarySumOfDigits);
 
     }
 
