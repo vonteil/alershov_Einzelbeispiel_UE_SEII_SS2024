@@ -1,7 +1,5 @@
 package com.example.einzelbeispiel_21;
 
-//import static com.google.android.material.button.MaterialButtonToggleGroup.CornerData.start;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private final int portNumber = 20080;
     private EditText nummer;
     private TextView serverReply;
-    private TextView aufgabe22;
+    //private TextView aufgabe22;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Button button = findViewById(R.id.button);
         button.setEnabled(true);
         nummer = findViewById(R.id.nummer);
-        Button button2 = findViewById(R.id.Berechnung);
+        Button buttonBerechnung = findViewById(R.id.Berechnung);
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -46,9 +44,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         serverReply = findViewById(R.id.server_reply);
-        //aufgabe22 = findViewById(R.id.aufgabe22);
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        buttonBerechnung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onButtonBerechnungClick();
