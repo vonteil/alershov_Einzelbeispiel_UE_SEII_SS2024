@@ -2,7 +2,6 @@ package com.example.einzelbeispiel_21;
 
 //import static com.google.android.material.button.MaterialButtonToggleGroup.CornerData.start;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 
@@ -24,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private final int portNumber = 20080;
     private EditText nummer;
     private TextView serverReply;
-    private Button button;
 
 
     @Override
