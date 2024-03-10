@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private final int portNumber = 20080;
     private EditText nummer;
     private TextView serverReply;
-
+    private TextView aufgabe22;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,16 +34,31 @@ public class MainActivity extends AppCompatActivity {
         Button button = findViewById(R.id.button);
         button.setEnabled(true);
         nummer = findViewById(R.id.nummer);
+        Button button2 = findViewById(R.id.Berechnung);
 
-        button.setOnClickListener (new View.OnClickListener() {
+
+        button.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick (View v){
+            public void onClick(View v) {
                 onButtonClick();
             }
         });
 
         serverReply = findViewById(R.id.server_reply);
+        //aufgabe22 = findViewById(R.id.aufgabe22);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onButtonBerechnungClick();
+            }
+        });
+    }
+    protected void onButtonBerechnungClick(){
+        String berechnungInString = nummer.getText().toString();
+        serverReply.setText(berechnungInString);
+
     }
 
     protected void onButtonClick (){
