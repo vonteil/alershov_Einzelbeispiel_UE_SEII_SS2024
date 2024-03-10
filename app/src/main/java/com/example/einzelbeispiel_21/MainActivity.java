@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private final int portNumber = 20080;
     private EditText nummer;
     private TextView serverReply;
-    //private TextView aufgabe22;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
