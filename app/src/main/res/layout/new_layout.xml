@@ -39,7 +39,7 @@
 
     <TextView
         android:id="@+id/server_reply"
-        android:text="test_test"
+        android:text="@string/antwort"
         android:textSize="20sp"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"

@@ -35,9 +35,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.new_layout);
 
         Button button = findViewById(R.id.button);
-        button.setEnabled(false);
+        button.setEnabled(true);
         nummer = findViewById(R.id.nummer);
-
 
         button.setOnClickListener (new View.OnClickListener() {
 
@@ -54,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
         String numberInString = nummer.getText().toString();
 
-        button.setEnabled(true);
             new Thread (new Runnable() {
                 @Override
                 public void run() {

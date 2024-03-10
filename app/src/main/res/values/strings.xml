@@ -3,4 +3,5 @@
     <string name="gib_deine_martikelnummer_ein">Gib deine Martikelnummer ein</string>
     <string name="nummer">Nummer</string>
     <string name="abschicken">ABSCHICKEN</string>
+    <string name="antwort">Antwort vom Server</string>
 </resources>
