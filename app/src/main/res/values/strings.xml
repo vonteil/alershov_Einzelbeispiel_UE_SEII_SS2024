@@ -4,4 +4,6 @@
     <string name="nummer">Nummer</string>
     <string name="abschicken">ABSCHICKEN</string>
     <string name="antwort">Antwort vom Server</string>
+    <string name="berechnungsergebnis">Berechnungsergebnis</string>
+    <string name="berechnung_ausloesen">Berechnung auslösen</string>
 </resources>
